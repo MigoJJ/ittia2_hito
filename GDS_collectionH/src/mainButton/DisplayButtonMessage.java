@@ -32,12 +32,13 @@ public class DisplayButtonMessage extends JFrame {
 			buttons[i].addActionListener(new ActionListener(){
 				public void actionPerformed(ActionEvent e) {
 				  String choice = e.getActionCommand();
-				  try {
-					DBM_process.main(choice);
-				  } catch (IOException e1) {
+
+					try {
+						DBM_process.main(choice);
+					} catch (Exception e1) {
 						// TODO Auto-generated catch block
-					e1.printStackTrace();
-				  }
+						e1.printStackTrace();
+					}
 				}
 			});
 		panel.add(buttons[i]);
