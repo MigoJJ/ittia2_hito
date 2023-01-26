@@ -17,7 +17,7 @@ public class DBM_process {
 		else if (bchoice== "OT") {}
 		else if (bchoice== "Support") {}
 		else if (bchoice== "aaa") {}
-		else if (bchoice== "Exit") {}
+		else if (bchoice== "Exit") {System.exit(0);}
 		else {}
 	}
 
