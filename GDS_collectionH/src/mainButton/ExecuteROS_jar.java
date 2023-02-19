@@ -11,7 +11,7 @@ public class ExecuteROS_jar {
 		String[] list = new String[] {"/bin/bash", "-c", "java -jar ittia1jros.jar","pwd"};		
 		Process p = null;
 		ProcessBuilder pb = new ProcessBuilder(list);
-		pb.directory(new File("/home/migowj/ittia1_chart/addjar_ittia2"));
+		pb.directory(new File(homeDirectory +"/ittia_chart/addjar_ittia2/ROS"));
 		System.out.println("" + pb.directory());
 		p = pb.start();
 		
