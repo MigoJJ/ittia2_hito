@@ -11,7 +11,7 @@ public class ExecuteTxPx_jar {
 		String[] list = new String[] {"/bin/bash", "-c", "java -jar TxPx.jar","pwd"};		
 		Process p = null;
 		ProcessBuilder pb = new ProcessBuilder(list);
-		pb.directory(new File("/home/migowj/ittia1_chart/addjar_ittia4"));
+		pb.directory(new File("/home/migowj/ittia_chart/addjar_ittia4"));
 		System.out.println("" + pb.directory());
 		p = pb.start();
 		
