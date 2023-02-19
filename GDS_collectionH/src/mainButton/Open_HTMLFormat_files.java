@@ -1,14 +1,25 @@
 package mainButton;
 
+import java.awt.Desktop;
+import java.io.File;
 import java.io.IOException;
 
-public class Open_HTMLFormat_files {
+public class OpenHTMLFormatFiles {
+    public static void main(String[] args) {
+        System.out.println("Hello MigoWJ ~~!!");
+        System.out.println("Working Directory = " + System.getProperty("user.dir"));
 
-	public static void main(String string) throws IOException {
-		System.out.println(" Hello MigoWJ ~~!!");
-	    System.out.println("Working Directory = " + System.getProperty("user.dir"));
-		Runtime runtime = Runtime.getRuntime();
-		Process process = runtime.exec(string);
-		}
+        // Replace file path with your own ODT file path
+        File file = new File("path/to/your/file.odt");
 
+        try {
+            if (file.exists()) {
+                Desktop.getDesktop().open(file);
+            } else {
+                System.out.println("File does not exist.");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
