@@ -11,13 +11,13 @@ public class DBM_process {
 
 		
 		if (bchoice== "HTML5") {
-			Open_HTMLFormat_files.main("firefox " + hDir + "/SupportFiles");
+			OpenHTMLFormatFiles.main("firefox " + hDir + "/SupportFiles");
 			}
 		else if (bchoice== "ROS") {
 			ExecuteROS_jar.main(null);
 			}
 		else if (bchoice== "consult") {
-			Open_HTMLFormat_files.main("file://" + hDir + "/SupportFiles/ConsultationSheet/OT.odt");
+			OpenConsultFormatFiles.main("file://" + hDir + "/SupportFiles/ConsultationSheet/OT.odt");
 		}
 		else if (bchoice== "Thyroid") {
 			ExecuteTxPx_jar.main(null);
